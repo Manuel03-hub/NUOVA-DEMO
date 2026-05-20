@@ -22,4 +22,10 @@ return repo.findAll();
 public Message create(@RequestBody Message msg) {
 return repo.save(msg);
 }
+
+@DeleteMapping
+public void deleteAll(){
+repo.deleteAll();
+}
+
 }
